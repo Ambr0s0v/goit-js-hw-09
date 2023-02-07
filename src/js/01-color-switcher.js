@@ -21,6 +21,7 @@ function stop(){
     btnStop.setAttribute("disabled","true");
     btnStart.removeAttribute("disabled");
 }
+console.log(btnContainer);
 
 btnContainer.addEventListener("click",(event) =>{
     let isStart = event.target.dataset.start === "start"? true: false
@@ -30,3 +31,5 @@ btnContainer.addEventListener("click",(event) =>{
         stop();
     }
 })
+
+
